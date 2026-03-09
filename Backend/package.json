@@ -1,0 +1,23 @@
+{
+  "name": "airman",
+  "version": "1.0.0",
+  "description": "in this project we are building a mini skynet EPR",
+  "keywords": [
+    "Node.js",
+    "TypeScript",
+    "Postgre",
+    "SQl",
+    "Express"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VikashYadav51/Skynet-EPR-App.git"
+  },
+  "license": "ISC",
+  "author": "VIKASH YADAV",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  }
+}
