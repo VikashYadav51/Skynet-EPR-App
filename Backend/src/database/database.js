@@ -4,8 +4,6 @@ const { Pool } = pkg;
 import dotenv from "dotenv";
 dotenv.config({});
 
-console.log(`DB_PASSWORD:`, process.env.DB_PASSWORD)
-
 const pool = new Pool({
   host: process.env.DATABASE_HOST,
   port: Number(process.env.DATABASE_PORT),
