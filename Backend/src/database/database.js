@@ -17,7 +17,13 @@ const connectDB = knex({
   pool : {
     min : 2,
     max : 10
-  }
+  },
+
+  migrations : {
+    tableName : "knex_migrations",
+    directory : "./migrations",
+  },
+  
 })
 
 export default connectDB;
