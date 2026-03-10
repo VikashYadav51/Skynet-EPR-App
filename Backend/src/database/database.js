@@ -12,8 +12,15 @@ const pool = new Pool({
   database: process.env.DATABASE_NAME,
 });
 
+
+// Event handler for successful connection
 pool.on("connect", ()=>{
     console.log("Connected to database");
-})
+});
+
+// Error handling 
+pool.on("error", (err)=>{
+    console.log("Error connecting to database", err);
+});
 
 export default pool;
